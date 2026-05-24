@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #070a0f;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    transform: scale(0.96);
+    opacity: 0.14;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.28;
+  }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 1.2s ease-in-out infinite;
+}
